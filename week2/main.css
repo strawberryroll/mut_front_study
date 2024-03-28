@@ -1,0 +1,17 @@
+.table {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+.col1{
+    background-color: darkseagreen;
+}
+.col2{
+    background-color: darkseagreen;
+}
+.col3{
+    background-color: lightpink;
+}
+.col4{
+    background-color: aqua;
+}
