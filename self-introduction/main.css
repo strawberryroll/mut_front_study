@@ -1,0 +1,148 @@
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.yellow-box {
+    display: flex;
+    justify-content: center; /* 자식 요소들을 수평으로 가운데 정렬 */
+    align-items: center; /* 자식 요소들을 수직으로 가운데 정렬 */
+    background-color: #F3C343;
+    width: 100%;
+    height: 900px; 
+}
+
+#introduce {
+    color: white;
+    font-size: 130px;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -10px;
+    text-align: center;
+}
+
+#lion {
+    position: relative; 
+    width: 20%;
+    left: 40%;
+    top: 65%
+}
+
+.background {
+    background-color: #F3C343;
+    margin-top: 1400px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 1300px;
+}
+
+.title {
+    font-size: 120px;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.about-box {
+    margin: 30px 50px;
+    display: flex;
+    background-color: black;
+    margin-bottom: 100px; /* ?????? */
+    border-radius: 10px;
+    /* border: #F3C343 10px solid; */
+}
+
+#img {
+    width: 40%;
+    margin-top: 60px;
+    /* margin: auto; */
+}
+
+.flex-box-img {
+    width: 25%;
+    height: 700px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center; /* 자식 요소들을 수평으로 가운데 정렬 */
+    background-color: white;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.flex-box-img  p {
+    font-size: 20px;
+}
+
+.flex-box-explain {
+    display: inline-flex;
+    width: 75%;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: center; /* 자식 요소들을 수평으로 가운데 정렬 */
+    align-content: center; /* 자식 요소들을 수직으로 가운데 정렬 */
+    margin-left: 50px;
+    background-color: white;
+    /* border-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flex-box-explain > div {
+    width: 30%;
+    height: 200px;
+    /* border: #F3C343 5px solid; */
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+.explain-title {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.explain-content {
+    color: black;
+    font-size: 30px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.white-box {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.quiz-box {
+    display: flex;
+    justify-content: center; /* 자식 요소들을 수평으로 가운데 정렬 */
+}
+
+.quiz-box > div {
+    margin: 10px;
+    width: 30%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 30px;
+}
+
