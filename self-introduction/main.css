@@ -13,7 +13,6 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
 }
 
 .yellow-box {
@@ -36,22 +35,41 @@ body {
 }
 
 #lion {
-    position: absolute; 
+    position: absolute;
     width: 20%;
     left: 40%;
-    top: 65%;
+    top: 65%;  
+    transition: transform 0.3s; /* 기본 상태에도 transition을 적용 */  
 }
 
-.tran {
+#lion:hover {
+    transform: translateY(400px);
+    transition-duration: 1s;
+}
+
+.text-under-lion {
+    position: absolute;
+    left: 50%; /* lion 요소의 가로 중앙에 텍스트 위치 */
+    bottom: -40px; /* lion 요소의 아래에 텍스트 위치 */
+    transform: translateX(-50%); /* 가로 중앙 정렬을 위한 설정 */
+    font-size: 30px;
+    color: black;
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    transition: opacity 0.5s ease; /* 투명도 변화에 transition 효과 적용 */
+}
+
+#lion:hover + .text-under-lion {
+    bottom: -500px; /* lion 요소의 아래에 텍스트 위치 (hover 시 이동할 거리) */
+    transition-duration: 3s; /* 이동에 대한 transition 효과 지정 */
+    opacity: 1; /* hover 시 텍스트 표시 */
+}
+
+
+.white {
     height: 1000px;
     background-color: white;
-    transition-property: background-color;
-    transition-duration: 1.5s;
 }
 
-.tran:hover {
-    background-color: #F3C343;
-}
 
 .background {
     background-color: #F3C343;
@@ -72,9 +90,8 @@ body {
     margin: 30px 50px;
     display: flex;
     background-color: grey;
-    margin-bottom: 100px; /* ?????? */
+    margin-bottom: 100px; 
     border-radius: 10px;
-    /* border: #F3C343 10px solid; */
 }
 
 #img {
