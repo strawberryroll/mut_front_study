@@ -36,15 +36,25 @@ body {
 }
 
 #lion {
-    position: relative; 
+    position: absolute; 
     width: 20%;
     left: 40%;
-    top: 65%
+    top: 65%;
+}
+
+.tran {
+    height: 1000px;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+}
+
+.tran:hover {
+    background-color: #F3C343;
 }
 
 .background {
     background-color: #F3C343;
-    margin-top: 1400px;
     padding-bottom: 200px;
     width: 100%;
     height: 1300px;
@@ -61,7 +71,7 @@ body {
 .about-box {
     margin: 30px 50px;
     display: flex;
-    background-color: black;
+    background-color: grey;
     margin-bottom: 100px; /* ?????? */
     border-radius: 10px;
     /* border: #F3C343 10px solid; */
@@ -105,7 +115,6 @@ body {
 .flex-box-explain > div {
     width: 30%;
     height: 200px;
-    /* border: #F3C343 5px solid; */
     border-radius: 10px;
     border: none;
     margin: 10px;
@@ -146,3 +155,14 @@ body {
     font-size: 30px;
 }
 
+/* #quiz button {
+    border: none;
+    border-radius: 10px;
+    background-color: #f3c443a6;
+    padding: 5px;
+    color: white;
+}
+
+#quiz button:hover {
+    background-color: #e0ded8c8;
+} */
