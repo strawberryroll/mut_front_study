@@ -44,7 +44,7 @@ body {
 
 #lion:hover {
     transform: translateY(400px);
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 }
 
 .text-under-lion {
@@ -97,17 +97,15 @@ body {
 #img {
     width: 40%;
     margin-top: 60px;
-    /* margin: auto; */
 }
 
 .flex-box-img {
     width: 25%;
     height: 700px;
-    display: inline-flex;
+    display: inline-flex; /* container에게 inline 요소와 같이 수평쌓임을 가지게 함 */
     flex-direction: column;
     align-items: center; /* 자식 요소들을 수평으로 가운데 정렬 */
     background-color: white;
-    /* border-radius: 10px; */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -116,15 +114,14 @@ body {
 }
 
 .flex-box-explain {
-    display: inline-flex;
+    display: inline-flex; /* container에게 inline 요소와 같이 수평쌓임을 가지게 함 */
     width: 75%;
     height: 700px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Items를 줄 바꿈 */
     justify-content: center; /* 자식 요소들을 수평으로 가운데 정렬 */
     align-content: center; /* 자식 요소들을 수직으로 가운데 정렬 */
     margin-left: 50px;
     background-color: white;
-    /* border-radius: 10px; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -170,16 +167,18 @@ body {
     border-radius: 10px;
     background-color: white;
     font-size: 30px;
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    transition: opacity 1s ease; /* hover 상태에서의 투명도 변화를 천천히 적용 */
 }
 
-/* #quiz button {
-    border: none;
-    border-radius: 10px;
-    background-color: #f3c443a6;
-    padding: 5px;
-    color: white;
+#quiz1:hover  {
+    opacity: 1; /* hover 시 투명도를 1로 설정하여 나타나도록 함 */
 }
 
-#quiz button:hover {
-    background-color: #e0ded8c8;
-} */
+#quiz2:hover {
+    opacity: 1;
+}
+
+#quiz3:hover {
+    opacity: 1;
+}
